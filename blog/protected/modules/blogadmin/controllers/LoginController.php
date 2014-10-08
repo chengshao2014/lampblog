@@ -1,4 +1,7 @@
 <?php
+	/**
+	 * 登录页面以及登录验证
+	 */
 	class LoginController extends Controller{
 		public function actionIndex(){
 			/**if(isset($_POST['LoginForm']))
@@ -7,7 +10,7 @@
 			}
 			if($loginForm->validate())
 			{
-
+				$user_model = Users::model()->findByAttributes(array('username' => $loginForm->username));
 			}**/
 			$this->render('index');
 		}

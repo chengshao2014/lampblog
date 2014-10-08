@@ -3200,3 +3200,36 @@ Stack trace:
 REQUEST_URI=/blog/blogadmin/index.html/
 in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (6)
 in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/08 15:16:50 [error] [php] Creating default object from empty value (E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:9)
+Stack trace:
+#0 E:\phpStudy\WWW\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 E:\phpStudy\WWW\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 E:\phpStudy\WWW\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 E:\phpStudy\WWW\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpStudy\WWW\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpStudy\WWW\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/index.html/
+in E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (9)
+in E:\phpStudy\WWW\blog\blog\index.php (13)
+2014/10/08 15:22:52 [error] [php] Creating default object from empty value (E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:9)
+Stack trace:
+#0 E:\phpStudy\WWW\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 E:\phpStudy\WWW\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 E:\phpStudy\WWW\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 E:\phpStudy\WWW\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpStudy\WWW\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpStudy\WWW\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/index.html/
+in E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (9)
+in E:\phpStudy\WWW\blog\blog\index.php (13)
+2014/10/08 15:23:29 [error] [php] Creating default object from empty value (E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:9)
+Stack trace:
+#0 E:\phpStudy\WWW\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 E:\phpStudy\WWW\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 E:\phpStudy\WWW\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 E:\phpStudy\WWW\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\phpStudy\WWW\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\phpStudy\WWW\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/index.html/
+in E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (9)
+in E:\phpStudy\WWW\blog\blog\index.php (13)

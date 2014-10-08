@@ -10,7 +10,16 @@
 		<div class="loginborder">
 			<div class="center">
 				<form action="<?php echo Yii::app()->request->baseUrl; ?>/blogadmin/index.html/" method="post">
-				<?php $form = $this->beginWidget('CActiveForm')?>
+				<?php //$form = $this->beginWidget('CActiveForm')?>
+				<?php
+					$form = $this->beginWidget('CActiveForm', array(
+					    'id' => 'login-form',
+					    	'enableClientValidation' => true,
+					    	'clientOptions' => array(
+					        	'validateOnSubmit' => true,
+					    		),
+					        ));
+					?>
 				<div class="" style="float:center;height:60px">
 					<div style="float:left;width:20%;height:60px;text-align:right;">登录:</div>
 					<div style="width:auto;height:60px;float:left"><?php echo $form->textField($loginForm,'username',array('id'=>'userName'))?>
