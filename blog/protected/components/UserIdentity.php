@@ -17,6 +17,7 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
+		/*
 		$users=array(
 		// username => password
 			'demo'=>'demo',
@@ -29,5 +30,16 @@ class UserIdentity extends CUserIdentity
 		else
 		$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
+		**/
+		$record = User::model()->findByAttributes(array('username'=>$this->username));
+		if($record === null)
+			$this->errorCode = self::ERROR_USERNAME_INVALID;
+		else if ($record->password != $this->password)
+			$this->errorCode = self::ERROR_PASSWORD_INVALID;
+		else
+		{
+			$this->errorCode = self::ERROR_NONE;
+		}
+		return!this->errorCode;
 	}
 }
