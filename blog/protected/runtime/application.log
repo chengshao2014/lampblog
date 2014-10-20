@@ -3233,6 +3233,7 @@ Stack trace:
 REQUEST_URI=/blog/blogadmin/index.html/
 in E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (9)
 in E:\phpStudy\WWW\blog\blog\index.php (13)
+<<<<<<< HEAD
 2014/10/17 10:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in E:\WWW\lampblog\framework\web\CController.php:483
 Stack trace:
 #0 E:\WWW\lampblog\framework\web\CController.php(270): CController->missingAction('index.php')
@@ -3243,3 +3244,125 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/lampblog/blog/index.php?r=blogadmin/login/index.php
 ---
+=======
+2014/10/19 10:01:56 [error] [php] Creating default object from empty value (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:10)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/index.html/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (10)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 10:11:00 [error] [php] Undefined index: LoginForm (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:28)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (28)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 10:11:26 [error] [php] Undefined index: LoginForm (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:28)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (28)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 10:13:04 [error] [php] Undefined index: LoginForm (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:28)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (28)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 10:13:27 [error] [php] Undefined index: LoginForm (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:28)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (28)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 11:52:46 [error] [php] Missing argument 1 for LoginController::authLogin(), called in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php on line 44 and defined (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:21)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#4 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (21)
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (44)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 11:53:19 [error] [php] Missing argument 1 for LoginController::authLogin(), called in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php on line 44 and defined (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:21)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#4 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (21)
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (44)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 11:54:22 [error] [php] Undefined index: LoginForm (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:22)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#4 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (22)
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (45)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 11:54:44 [error] [php] Undefined index: LoginForm (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:23)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#4 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (23)
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (46)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/19 13:42:51 [error] [php] Undefined index: username (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:22)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#4 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blogadmin/
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (22)
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (49)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+>>>>>>> a91563265cde293fce090977f01a0e87cb787775

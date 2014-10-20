@@ -24,11 +24,13 @@ class LoginForm extends CFormModel
 		// username and password are required
 		array('username, password', 'required'),
 		// rememberMe needs to be a boolean
-		array('rememberMe', 'boolean'),
+		//array('rememberMe', 'boolean'),
+		array('username','required','message'=>'登录帐号不能为空'),
+		array('password','required','message'=>'密码不能为空'),
 		// password needs to be authenticated
 		array('password', 'authenticate'),
 		
-		array('captcha', 'captcha','message'=>'��֤�����'),
+		array('captcha', 'captcha','message'=>'验证码错误'),
 		
 		
 		);

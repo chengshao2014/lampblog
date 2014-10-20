@@ -38,17 +38,19 @@ body {
 	left:11%;
 	margin-top:20px;
 }
-#userName{
+#username{
 	
 	height:25px;
-	width:250px;
+	width:150px;
 	line-height: 25px;
+	border-radius: 20px;
 }
 /*border-radius: 20px;*/
-#psd{
+#password{
 	
 	height:25px;
-	width:250px;
+	width:150px;
+	border-radius: 20px;
 }
 .logins{
 	border-radius:15px;
@@ -65,7 +67,7 @@ body {
 }
 li{list-style-type: none;}
 #verify{
-	/*border-radius:15px;*/
+	border-radius:15px;
 	height:20px;
 }
 #veryCode{

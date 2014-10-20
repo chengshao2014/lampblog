@@ -4,17 +4,31 @@
 	 */
 	class LoginController extends Controller{
 		public function actionIndex(){
-			/**if(isset($_POST['LoginForm']))
+			/*
+			$loginForm = new LoginForm();
+			if(isset($_POST['LoginForm']) || is_array($_POST['LoginForm']))
 			{
 				$loginForm->attributes = $_POST['LoginForm'];
 			}
+			
 			if($loginForm->validate())
 			{
-				$user_model = Users::model()->findByAttributes(array('username' => $loginForm->username));
-			}**/
+				$user_model = Users::model()->findByAttributes(array('username' => $loginForm->username));	
+			}
+			**/
 			$this->render('index');
 		}
-
+		static function authLogin(){
+			if($_POST['username']==""){
+				echo "用户名不能为空！";
+			}
+			/*if(isset($_POST['LoginForm']) && is_array($_POST['LoginForm']))
+			{
+				$uname = !empty($_POST['LoginForm']['username'])?trim($_POST['LoginForm']['username']):null;
+				$password = !empty($_POST['LoginForm']['password'])?trim($_POST['LoginForm']['password']):null;
+				$captcha = !empty($_POST['LoginForm']['captcha'])?strtolower($_POST['LoginForm']['captcha']):null;
+			}**/
+		}
 		public function actions()
 		{
 			return array(
@@ -32,7 +46,8 @@
 		public function actionLogin()
 		{
 			$loginForm = new LoginForm();
+			//self::authLogin();
 			$this->render('login',array('loginForm'=>$loginForm));
 		}
-		
+	
 	}
