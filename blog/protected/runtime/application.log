@@ -3233,3 +3233,13 @@ Stack trace:
 REQUEST_URI=/blog/blogadmin/index.html/
 in E:\phpStudy\WWW\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (9)
 in E:\phpStudy\WWW\blog\blog\index.php (13)
+2014/10/17 10:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in E:\WWW\lampblog\framework\web\CController.php:483
+Stack trace:
+#0 E:\WWW\lampblog\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 E:\WWW\lampblog\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 E:\WWW\lampblog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 E:\WWW\lampblog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\WWW\lampblog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lampblog/blog/index.php?r=blogadmin/login/index.php
+---
