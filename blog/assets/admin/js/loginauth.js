@@ -26,6 +26,27 @@ function showPwd(passwd){
 function showCaptcha(captcha){
 	//if(captcha==""|| captcha=="undefined"){
 		//var capt=document.getElementById('veryCode').value;
-		alert(captcha);
+		//
 	//}
 }
+
+$('form').submit(function(e){
+	e.preventDefault();
+	var url = "/index.php?r=blogadmin/login/authLogin/";
+	username = $("#username").val();
+	password = $("#password").val();
+	captcha = $("#verify").val();
+	requestData = {'username': username, 'password': password,'captcha':captcha};
+ 	$.post(url, requestData, function(data) {
+  			if(username=="" || username=="undefined"){
+				document.getElementById("authname").innerHTML="<p style='color:red;float:right;line-height:40px;padding-left:32px;'>*用户名不能为空</p>";
+			}else{
+				document.getElementById("authname").innerHTML="<p></p>";
+			}
+			if(data){
+				alert(data);
+			}else{
+				location.href="/blogadmin/index";
+			}
+ 		});
+});

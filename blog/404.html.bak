@@ -9,7 +9,7 @@
 <body>
 <div id="container">
 	<div id="talker">
-		<a href="http://www.lamnpblog.com.cn/"><img src="http://localhost/blog/assets/admin/images/xiaohaidao.jpg" alt="大胡子" /></a>
+		<a href="http://www.lamnpblog.com.cn/blog/"><img src="http://www.lamnpblog.com.cn/blog/assets/admin/images/xiaohaidao.jpg" alt="大胡子" /></a>
 	</div>
 	<div id="notice">
 		<h1>欢迎来到 404 页面</h1>
