@@ -4234,3 +4234,112 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/blogadmin/index
 ---
+2014/10/22 00:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "centre".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('centre')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('centre')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/centre
+---
+2014/10/22 00:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top
+---
+2014/10/22 00:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top
+---
+2014/10/22 00:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top
+---
+2014/10/22 00:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top
+---
+2014/10/22 00:04:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top
+---
+2014/10/22 00:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top.php".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top.php')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top.php')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top.php
+---
+2014/10/22 00:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top.php".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top.php')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top.php')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top.php
+---
+2014/10/22 00:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "top.php".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('top.php')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('top.php')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/top.php
+---
+2014/10/22 00:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blogadmin/index/".' in G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/index...')
+#1 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=blogadmin/index/
+---
+2014/10/22 00:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bottom width=".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('bottom width=')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('bottom width=')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/bottom%20width=
+HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/
+---
