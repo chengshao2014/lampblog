@@ -5,10 +5,8 @@
 // Program Homepage: http://www.ccvita.com
 // Copyright (C) www.ccita.com All Rights Reserved.
 //==================================================//
-
 $pass="<font color=green><b>√</b></font>";
 $error="<font color=red><b>×</b></font>";
-
 $mtime = explode(' ', microtime());
 $pagestarttime = $mtime[1] + $mtime[0];
 $php_self = $_SERVER['PHP_SELF'] ? $_SERVER['PHP_SELF'] : $_SERVER['SCRIPT_NAME'];
@@ -52,7 +50,6 @@ function check_io()
         $time_io = round($time, 5)."秒";
         return $time_io;
     }
-
 
 
 function check($funcname,$func="function_exists")
@@ -133,7 +130,7 @@ body,td,th {
             <td width="20%" bgcolor="#dee3e7" align="center"><a href="#php">PHP基本特性</a></td>
             <td width="20%" bgcolor="#dee3e7" align="center"><a href="#basic">组件支持状况</a></td>
             <td width="20%" bgcolor="#dee3e7" align="center"><a href="#define">自定义检测</a></td>
-            <td width="20%" bgcolor="#dee3e7" align="center"><a href="#check">服务器性能检测</a></td>
+            <td width="20%" bgcolor="#dee3e7" align="center"><a href="&info=phpinfo">服务器性能检测</a></td>
           </tr>
         </table><br><br>
     <a name="server"></a>
@@ -336,9 +333,197 @@ body,td,th {
       <td bgcolor="#c2cdd6">历法运算 Calendar</td>
       <td align="center" bgcolor="#E9E9E9"><?php echo check("JDToGregorian");?></td>
     </tr>
-   
-    
-    
-
+    <tr>
+      <td bgcolor="#c2cdd6">CLASS/OBJECT 类/对象支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("class_exists");?></td>
+      <td bgcolor="#c2cdd6">CCVS API支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ccvs_add");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">客户端URL支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("curl_close");?></td>
+      <td bgcolor="#c2cdd6">CrackLib支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("crack_check");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">cybercash加密支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("cybercash_decr");?></td>
+      <td bgcolor="#c2cdd6">Cyrus IMAP电子邮件系统支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("cyrus_close");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">字串类型检测支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ctype_upper");?></td>
+      <td bgcolor="#c2cdd6">直接的IO操作支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("dio_close");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">DOM XML支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("domxml_xmltree");?></td>
+      <td bgcolor="#c2cdd6">.NET支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("dotnet_load");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">FDF表单资料格式 Forms Data Format</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("FDF_close");?></td>
+      <td bgcolor="#c2cdd6">fribidi支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("fribidi_log2vis");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">FTP支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ftp_login");?></td>
+      <td bgcolor="#c2cdd6">GMP支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("gmp_mul");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">图形处理 GD Library</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("imageline");?></td>
+      <td bgcolor="#c2cdd6">GNU Readline支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("readline");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">GNU Recode支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("recode");?></td>
+      <td bgcolor="#c2cdd6">Iconv字符编码函数</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("iconv");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">IMAP电子邮件系统</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("imap_close");?></td>
+      <td bgcolor="#c2cdd6">IRC网关系统支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ircg_join");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">LDAP目录存取协议</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ldap_close");?></td>
+      <td bgcolor="#c2cdd6">MCAL历法支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("mcal_close");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">MCrypt加密处理</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("mcrypt_cbc");?></td>
+      <td bgcolor="#c2cdd6">MCVE支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("mcve_adduser");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">哈希计算 MHash</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("mhash");?></td>
+      <td bgcolor="#c2cdd6">Mimetype支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("mime_content_type");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">ming FLASH 支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ming_setscale");?></td>
+      <td bgcolor="#c2cdd6">mnoGoSearch搜索引擎支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("udm_find");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">msession支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("msession_connect");?></td>
+      <td bgcolor="#c2cdd6">多字节字串支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("mb_language");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">muscat支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("muscat_close");?></td>
+      <td bgcolor="#c2cdd6">Ncurses终端屏幕控制支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("ncurses_color_set");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">OpenSSL支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("openssl_open");?></td>
+      <td bgcolor="#c2cdd6">进程控制支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("pcntl_exec");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">PREL相容语法 PCRE</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("preg_match");?></td>
+      <td bgcolor="#c2cdd6">正则扩展(兼容perl)支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("preg_match");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">PDF文档支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("pdf_close");?></td>
+      <td bgcolor="#c2cdd6">PHP和JAVA综合支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("java_last_exception_get");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">POSIX支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("posix_ctermid");?></td>
+      <td bgcolor="#c2cdd6">打印功能支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("printer_close");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">Pspell拼写检查支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("pspell_check");?></td>
+      <td bgcolor="#c2cdd6">qtdom支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("qdom_tree");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">Semaphore,IPC,共享内存支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("sem_release");?></td>
+      <td bgcolor="#c2cdd6">Session支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("session_start");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">Shockwave Flash支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("swf_closefile");?></td>
+      <td bgcolor="#c2cdd6">SNMP网络管理协议</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("snmpget");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">SMTP支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("SMTP","get_cfg_var");?></td>
+      <td bgcolor="#c2cdd6">共享内存控制支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("shmop_close");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">Socket支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("fsockopen");?></td>
+      <td bgcolor="#c2cdd6">流媒体支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("stream_context_create");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">Tokenizer支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("token_name");?></td>
+      <td bgcolor="#c2cdd6">URL支持</td><td align="center" bgcolor="#E9E9E9"><?php echo check("parse_url");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">VMailMgr邮件处理</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("vm_adduser");?></td>
+      <td bgcolor="#c2cdd6">vpopmail支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("vpopmail_add_user");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">W32api支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("w32api_deftype");?></td>
+      <td bgcolor="#c2cdd6">WDDX支持(Web Distributed Data Exchange)</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("wddx_add_vars");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">XML解析</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("xml_set_object");?></td>
+      <td bgcolor="#c2cdd6">XML-RPC解析支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("xmlrpc_decode");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">XSLT支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("xslt_create");?></td>
+      <td bgcolor="#c2cdd6">YAZ支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("yaz_close");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">Yellow Page系统</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("yp_match");?></td>
+      <td bgcolor="#c2cdd6">YP/NIS支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("yp_all");?></td>
+    </tr>
+    <tr>
+      <td bgcolor="#c2cdd6">ZIP只读支持</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("zip_close");?></td>
+      <td bgcolor="#c2cdd6">压缩文件支持(Zlib)</td>
+      <td align="center" bgcolor="#E9E9E9"><?php echo check("gzclose");?></td>
+    </tr>
+    </table><br>
 </body>
 </html>

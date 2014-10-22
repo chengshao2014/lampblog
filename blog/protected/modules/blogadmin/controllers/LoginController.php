@@ -80,4 +80,8 @@
 		public function actionBottom(){
 			$this->render('bottom');
 		}
+
+		public function actionRepasswd(){
+			$this->render('repasswd');
+		}
 	}
