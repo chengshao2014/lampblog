@@ -31,7 +31,7 @@ H1 a {
 	height: 30px;
 	text-decoration: none;
 	moz-outline-style: none;
-	background-image: url(../images/admin_m/menu_bgs.gif);
+	background-image: url(/assets/admin/images/admin_m/menu_bgs.gif);
 	background-repeat: no-repeat;
 	line-height: 30px;
 	text-align: center;
@@ -76,7 +76,7 @@ H1 a {
 	font-size: 12px;
 	line-height: 26px;
 	color: #333333;
-	background-image: url(../images/admin_m/menu_bg1.gif);
+	background-image: url(/assets/admin/images/admin_m/menu_bg1.gif);
 	background-repeat: no-repeat;
 	height: 26px;
 	width: 182px;
@@ -92,7 +92,7 @@ H1 a {
 	font-size: 12px;
 	line-height: 26px;
 	color: #333333;
-	background-image: url(../images/admin_m/menu_bg1.gif);
+	background-image: url(/assets/admin/images/admin_m/menu_bg1.gif);
 	background-repeat: no-repeat;
 	display: block;
 	text-align: center;
@@ -107,7 +107,7 @@ H1 a {
 	font-size: 12px;
 	line-height: 26px;
 	color: #333333;
-	background-image: url(../images/admin_m/menu_bg1.gif);
+	background-image: url(/assets/admin/images/admin_m/menu_bg1.gif);
 	background-repeat: no-repeat;
 	height: 26px;
 	width: 182px;
@@ -124,7 +124,7 @@ H1 a {
 	line-height: 26px;
 	font-weight: bold;
 	color: #006600;
-	background-image: url(../images/admin_m/menu_bg2.gif);
+	background-image: url(/assets/admin/images/admin_m/menu_bg2.gif);
 	background-repeat: no-repeat;
 	text-align: center;
 	display: block;
@@ -147,7 +147,7 @@ H1 a {
       <div style="visibility: visible; opacity: 0.9999; overflow: hidden; height: 1%;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
-            <td><img src="../images/admin_m/menu_topline.gif" height="5" width="182"></td>
+            <td><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/menu_topline.gif" height="5" width="182"></td>
           </tr>
         </tbody></table>
         <ul class="MM">
@@ -160,7 +160,7 @@ H1 a {
       <div style="visibility: hidden; opacity: 0; overflow: hidden; height: 0px;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
-            <td><img src="../images/admin_m/menu_topline.gif" height="5" width="182"></td>
+            <td><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/menu_topline.gif" height="5" width="182"></td>
           </tr>
         </tbody></table>
         <ul class="MM">
@@ -174,7 +174,7 @@ H1 a {
       <div style="visibility: hidden; opacity: 0; overflow: hidden; height: 0px;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
-            <td><img src="../images/admin_m/menu_topline.gif" height="5" width="182"></td>
+            <td><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/menu_topline.gif" height="5" width="182"></td>
           </tr>
         </tbody></table>
         <ul class="MM">
@@ -205,7 +205,7 @@ H1 a {
           </tr>
         </tbody></table>
         <ul class="MM">
-                  <li><a href="/Countinfo/index" target="main">读取奖项用户</a></li>
+                  <li><a href="index.php?r=blogadmin/systeminfo/info" target="main">读取奖项用户</a></li>
                 </ul>
       </div>
 	   <!-----------------------功能段---------------------------->

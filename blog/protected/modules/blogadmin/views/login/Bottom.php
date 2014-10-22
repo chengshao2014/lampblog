@@ -7,7 +7,7 @@
 <link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css">
     <table class="login-buttom-bg" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
       <tbody><tr>
-        <td align="center"><span class="login-buttom-txt">Copyright © 2012-2013 </span></td>
+        <td align="center"><span class="login-buttom-txt">Copyright © 2014-2015 lamnp小菜鸟 ICP主体备案号:京ICP备14049449号</span></td>
       </tr>
     </tbody></table>
 

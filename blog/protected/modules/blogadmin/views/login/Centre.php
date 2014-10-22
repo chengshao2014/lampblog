@@ -1,9 +1,101 @@
+<?php
+$pass="<font color=green><b>√</b></font>";
+$error="<font color=red><b>×</b></font>";
+$mtime = explode(' ', microtime());
+$pagestarttime = $mtime[1] + $mtime[0];
+$php_self = $_SERVER['PHP_SELF'] ? $_SERVER['PHP_SELF'] : $_SERVER['SCRIPT_NAME'];
+function check_int()
+    {
+        $starttime = gettimeofday();
+        for($i = 0; $i < 1000000; $i++);
+        {
+            $tem = 1+1;
+        }
+        $endtime = gettimeofday();
+        $time = ($endtime["usec"]-$starttime["usec"])/1000000+$endtime["sec"]-$starttime["sec"];
+        $time_int = round($time, 5)."秒";
+        return $time_int;
+    }
+function check_float()
+    {
+        $t = pi();
+        $starttime = gettimeofday();
+        for($i = 0; $i < 1000000; $i++);
+        {
+            sqrt($tem);
+        }
+        $endtime = gettimeofday();
+        $time = ($endtime["usec"]-$starttime["usec"])/1000000+$endtime["sec"]-$starttime["sec"];
+        $time_float = round($time, 5)."秒";
+        return $time_float;
+    }
+function check_io()
+    {
+        $fp = fopen($_SERVER['SCRIPT_FILENAME'], "r");
+        $starttime = gettimeofday();
+        for($i = 0; $i < 10000; $i++)
+        {
+            fread($fp, 10240);
+            rewind($fp);
+        }
+        $endtime = gettimeofday();
+        fclose($fp);
+        $time = ($endtime["usec"]-$starttime["usec"])/1000000+$endtime["sec"]-$starttime["sec"];
+        $time_io = round($time, 5)."秒";
+        return $time_io;
+    }
+
+/**if ($_GET['info'] == "phpinfo")
+    {   phpinfo();
+        exit;}
+    elseif($_POST['check'] == "check")
+    {   $time_int = check_int();
+        $time_float = check_float();
+        $time_io = check_io();      }**/
+
+function check($funcname,$func="function_exists")
+{
+    if ($func($funcname))
+    {   $message='<font color=green><b>√</b></font>';   }
+    else
+    {   $message='<font color=red><b>×</b></font>'; }
+    return $message;
+}
+
+function check2($funcname,$func="function_exists")
+{
+    if ($func($funcname))
+    {   $message='<font color=green>ON</font>'; }
+    else
+    {   $message='<font color=red><b>OFF</b></font>';   }
+    return $message;
+}
+
+function check3($funcname,$func="getenv")
+{
+    if ($func($funcname))
+    {   $message=$func($funcname);  }
+    else
+    {   $message='服务器不支持显示数据';  }
+    return $message;
+}
+
+function check4($funcname,$func="getenv")
+{
+    if ($func($funcname))
+    {   $message=$func($funcname);
+        $message="<a title=".$message.">点我</a>";}
+    else
+    {   $message='<font color=green>NO</font>'; }
+    return $message;
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<link href="/css/skin.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/css/jquery.css">
+<link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="<?php //echo Yii::app()->request->baseUrl; ?>/assets/admin/css/jquery.css">-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery-1.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_002.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_004.js"></script>
@@ -31,7 +123,8 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
 .ui-dialog .ui-state-error { padding: .3em; }
 .validateTips { border: 1px solid transparent; padding: 0.3em; }
 #divPageNav .curr{color:#d2d2d2;font-size:15px;}
-#divPageNav A{color:#555555;font-size:15px;}
+#divPageNav a{color:#555555;font-size:15px;}
+a:hover {text-decoration: underline;color:blue;}
 </style>
 <script>
 $.ajaxSetup({cache:false});
@@ -83,75 +176,56 @@ var reportPicOptions = {
 
 <body>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tbody><tr>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_leftbg.gif" valign="top" width="17">
-	<img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/left-top-right.gif" height="29" width="17">
-	</td>
-    <td background="/images/content-bg.gif" valign="top">
-		<table class="left_topbg" id="table2" border="0" cellpadding="0" cellspacing="0" height="31" width="100%">
-      <tbody>
-	  <tr>
-        <td height="31"><div class="titlebt">欢迎界面</div></td>
-      </tr>
+    <tbody><tr>
+            <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_leftbg.gif" valign="top" width="17">
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/left-top-right.gif" height="29" width="17">
+            </td>
+            <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/content-bg.gif" valign="top">
+            <table class="left_topbg" id="table2" border="0" cellpadding="0" cellspacing="0" height="31" width="100%">
+    <tbody>
+        <tr>
+            <td height="31"><div class="titlebt">欢迎界面</div></td>
+        </tr>
     </tbody></table></td>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_rightbg.gif" valign="top" width="16"><img src="/images/nav-right-bg.gif" height="29" width="16"></td>
-  </tr>
-  <tr>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_leftbg.gif" valign="middle">&nbsp;</td>
-    <td bgcolor="#F7F8F9" height="500px;" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+            <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_rightbg.gif" valign="top" width="16"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/nav-right-bg.gif" height="29" width="16"></td>
+        </tr>
+        <tr>
+            <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_leftbg.gif" valign="middle">&nbsp;</td>
+            <td bgcolor="#fff" height="670px;" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
       <tbody><tr>
-        <td colspan="2" valign="top">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td valign="top">&nbsp;</td>
+            <td colspan="2" valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td valign="top">&nbsp;</td>
       </tr>
       <tr>
-        <td colspan="2" valign="top"><span class="left_bt">感谢您使用 </span><br>
-           <br>
-		</td>
-        <td width="7%">&nbsp;</td>
-        <td valign="top" width="40%">
-        </td>
+            <td colspan="2" valign="top"><span class="left_bt">感谢您使用LAMNPBLOG后台管理系统 </span><br>
+            </td>
       </tr>
-      <tr>
-        <td colspan="2" height="300px">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td colspan="2" valign="top">
-       </td>
-        <td>&nbsp;</td>
-        <td valign="top">
-       </td>
-      </tr>
-      <tr>
-        <td colspan="4" height="40"><table bgcolor="#CCCCCC" border="0" cellpadding="0" cellspacing="0" height="1" width="100%">
-          <tbody><tr>
-            <td></td>
-          </tr>
-        </tbody></table></td>
-      </tr>
-      <tr>
-        <td width="2%">&nbsp;</td>
-        <td class="left_txt" width="51%"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/icon-mail2.gif" height="11" width="16"> 客户服务邮箱：<br>
-              <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/icon-phone.gif" height="14" width="17"> </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-    </tbody></table></td>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_rightbg.gif">&nbsp;</td>
-  </tr>
-  <tr>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_leftbg.gif" valign="bottom">
-		<img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/buttom_left2.gif" height="17" width="17">
-	</td>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/buttom_bgs.gif">
-		<img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/buttom_bgs.gif" height="17" width="17">
-	</td>
-    <td background="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/mail_rightbg.gif" valign="bottom">
-		<img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/buttom_right2.gif" height="17" width="16">
-	</td>
-  </tr>
-</tbody></table>
-
+    </tbody>
+    
+    <table width="100%" height="18%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
+        <tr><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">我的个人信息</td></tr>
+        <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>你好：admin</td></tr>
+        <tr><td>所属角色：超级管理员</td><br/></tr>
+        <tr><td style="border-top:1px dotted #ccc;line-height:28px">上次登录IP：<?php echo $_SERVER['REMOTE_ADDR'];?></td></tr>
+    </table><br/>
+    <table width="100%" height="10%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
+        <tr height=10%><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">LamnpBlog系统开发团队</td></tr>
+        <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>版权所有：lamnp小菜鸟团队</td></tr>
+        <tr><td>总策划：JACK.AChan</td></tr>
+        <tr><td>开发与支持团队：JACK.AChan</td></tr>
+        <tr><td>UI 设计：JACK.AChan</td></tr>
+        <tr><td>lamnpblog官方网站：<a href="http://www.lamnpblog.com.cn" target="_blank" class="lamp_click">lamnp小菜鸟</td></tr>
+    </table><br/>
+    <table width="100%" height="10%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
+        <tr height=10%><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">系统信息</td></tr>
+        <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>服务器操作系统：<?php echo php_uname();?></td></tr>
+        <tr><td>服务器解译引擎：<?php echo check3("SERVER_SOFTWARE");?></td></tr>
+        <tr><td>服务器空余空间：<?php echo intval(diskfreespace(".") / (1024 * 1024)).'Mb';?></td></tr>
+        
+        <tr><td>服务器PHP版本：<?php echo PHP_VERSION;?></td></tr>
+        <tr><td>Web服务端口：<?php echo check3("SERVER_PORT");?></td></tr>
+        
+    </table>
+</table>
 </body></html>

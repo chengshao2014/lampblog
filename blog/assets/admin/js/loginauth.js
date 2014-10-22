@@ -1,12 +1,3 @@
-function authLogin(username){
-	/**var uname = document.getElementById('password');
-	if(uname.value==""){
-		document.getElementById("authuname").innerHTML="密码不能为空";
-		return false;
-	}**/
-		
-}
-
 function showUser(uname){
 	if(uname=="" || uname=="undefined"){
 		document.getElementById("authname").innerHTML="<p style='color:red;float:right;line-height:40px;padding-left:32px;'>*用户名不能为空</p>";
@@ -22,14 +13,11 @@ function showPwd(passwd){
 		document.getElementById("authpwd").innerHTML="<p></p>";
 	}
 }
-
-function showCaptcha(captcha){
-	//if(captcha==""|| captcha=="undefined"){
-		//var capt=document.getElementById('veryCode').value;
-		//
-	//}
-}
-
+/**
+ * 后台管理登录ajax验证
+ * @param  {[type]} e [description]
+ * @return {[type]}   [description]
+ */
 $('form').submit(function(e){
 	e.preventDefault();
 	var url = "/index.php?r=blogadmin/login/authLogin/";
