@@ -111,7 +111,8 @@ class CJSON
 			case 'string':
 				if (($enc=strtoupper(Yii::app()->charset))!=='UTF-8')
 				$var=iconv($enc, 'UTF-8', $var);
-
+				//转化编码格式报错因此加入115行代码解决此问题
+				$var = mb_check_encoding($var, 'UTF-8') ? $var : mb_convert_encoding($var, 'UTF-8','GBK');
 				if(function_exists('json_encode'))
 				return json_encode($var);
 
