@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.css">
+<!--<link rel="stylesheet" href="<?php #echo Yii::app()->request->baseUrl; ?>/assets/admin/css/jquery.css">-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery-1.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_002.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_004.js"></script>
@@ -14,7 +14,7 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_006.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_007.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_010.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.htm"></script>
+<!--<script src="<?php //echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.htm"></script>-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_005.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/formvalidator.js"></script>
@@ -32,7 +32,7 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
 .ui-dialog .ui-state-error { padding: .3em; }
 .validateTips { border: 1px solid transparent; padding: 0.3em; }
 #divPageNav .curr{color:#d2d2d2;font-size:15px;}
-#divPageNav A{color:#555555;font-size:15px;}
+#divPageNav a{color:#555555;font-size:15px;}
 </style>
 <script>
 $.ajaxSetup({cache:false});
@@ -91,7 +91,19 @@ $(function()
 			    var bid = $(event.target)[0].id;
 			    if(bid=="btnSave")
 			    {
-			        check();
+			                if(check()==true){
+                        if (confirm("您确定要修改管理员密码吗？"))
+                              newPass = $("#newPass").val();
+                              url = "/index.php?r=blogadmin/login/pwdsave";
+                              requestData = {'newPass':newPass};
+                              $.post(url,requestData,function(data){
+                                 if(data){
+                                    location.href="/index.php?r=blogadmin/login/index";
+                                 }
+                                
+                          });
+                }                   
+          
 			    }
 		});
 });
@@ -115,7 +127,7 @@ function check()
         return false;
     }
     $("#msg_conPass").html("");
-    $("#form1")[0].submit();
+    //$("#form1")[0].submit();
     return true;
 }
 </script>
@@ -168,7 +180,7 @@ function check()
           </tr>
           <tr>
             <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
-			<form name="form1" id="form1" method="POST" action="/index.php?r=blogadmin/login/pwdsave" onsubmit="return check();"></form>
+			<form name="form1" id="form1" method="POST" action="#" onsubmit="return check();"></form>
               <tbody><tr>
                 <td class="left_txt2" align="right" bgcolor="#f2f2f2" height="50" width="100px">原密码：</td>
                 <td bgcolor="#f2f2f2" width="20px">&nbsp;</td>

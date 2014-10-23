@@ -6833,3 +6833,102 @@ Stack trace:
 REQUEST_URI=/index.php?r=blogadmin/login/repassword
 HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/left
 ---
+2014/10/23 22:35:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pwdsave".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('pwdsave')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('pwdsave')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/repasswd
+---
+2014/10/23 22:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pwdsave".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('pwdsave')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('pwdsave')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/repasswd
+---
+2014/10/23 22:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pwdsave".' in G:\Design of programming\phpStudy\www\blog\framework\web\CController.php:483
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(270): CController->missingAction('pwdsave')
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): CController->run('pwdsave')
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('blogadmin/login...')
+#3 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/repasswd
+---
+2014/10/23 22:38:43 [error] [php] Undefined variable: pwdsave (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:90)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (90)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/23 22:39:15 [error] [php] Array to string conversion (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:90)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (90)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/23 22:39:42 [error] [php] Array to string conversion (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:90)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (90)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/23 23:08:16 [error] [php] Undefined index: newPass (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:90)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (90)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/23 23:08:56 [error] [php] Undefined index: newPass (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:90)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (90)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)
+2014/10/23 23:09:09 [error] [php] Undefined index: newPass (G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php:90)
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(286): LoginController->runAction()
+#1 G:\Design of programming\phpStudy\www\blog\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#2 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(282): LoginController->run()
+#3 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=blogadmin/login/pwdsave
+in G:\Design of programming\phpStudy\www\blog\blog\protected\modules\blogadmin\controllers\LoginController.php (90)
+in G:\Design of programming\phpStudy\www\blog\blog\index.php (13)

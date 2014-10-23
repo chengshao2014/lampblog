@@ -85,9 +85,11 @@
 			$this->render('repasswd');
 		}
 
-		public function pwdsave($passwd){
-			$passwd = !empty($_POST['newPass'])?$_POST['newPass']:null;
-			$data = admin_user->model()->fun();
-			$res = Yii::app()->db->createCommand("select * from qi_cell order by id desc limit 1")->queryRow();  
+		public function actionPwdsave(){
+			$newPass = !empty($_POST['newPass'])?$_POST['newPass']:null;
+			//var_dump($newPass);
+			//$this->render('pwdsave');
+			//$data = admin_user->model()->fun();
+			//$res = Yii::app()->db->createCommand("select * from qi_cell order by id desc limit 1")->queryRow();  
 		}
 	}
