@@ -7,7 +7,7 @@
 <script language="JavaScript">
 function logout(){
 	if (confirm("您确定要退出管理后台吗？"))
-	top.location = "/LoginOut/logout";
+	top.location = "/blogadmin/";
 	return false;
 }
 function showsubmenu(sid) {
