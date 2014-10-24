@@ -1,5 +1,5 @@
 <?php
-	class SystemInfoController extends CController{
+	class SysteminfoController extends CController{
 		public function actionInfo(){
 			$this->renderPartial('info');
 		}
