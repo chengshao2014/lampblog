@@ -97,7 +97,7 @@ function check4($funcname,$func="getenv")
 <link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css">
 <!--<link rel="stylesheet" href="<?php //echo Yii::app()->request->baseUrl; ?>/assets/admin/css/jquery.css">-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery-1.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_002.js"></script>
+<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_002.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_004.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_011.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_009.js"></script>
@@ -107,11 +107,11 @@ function check4($funcname,$func="getenv")
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_007.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_010.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_005.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/formvalidator.js"></script>
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="/js/jquery/flot/excanvas.min.js"></script><![endif]-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_013.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_003.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.js"></script>-->
+<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/formvalidator.js"></script>
+[if lte IE 8]><script language="javascript" type="text/javascript" src="/js/jquery/flot/excanvas.min.js"></script><![endif]-->
+<!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_013.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_003.js"></script>-->
 <style>
 select{height:20px; width:100px}
 input.text {height:20px;width:100px }
