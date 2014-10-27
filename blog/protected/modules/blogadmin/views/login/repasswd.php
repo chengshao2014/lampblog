@@ -98,7 +98,8 @@ $(function()
                               requestData = {'newPass':newPass};
                               $.post(url,requestData,function(data){
                                  if(data){
-                                    location.href="/index.php?r=blogadmin/login/index";
+                                    alert(data);
+                                    location.href="/index.php?r=blogadmin/login/repasswd";
                                  }
                                 
                           });

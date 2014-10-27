@@ -87,7 +87,9 @@
 
 		public function actionPwdsave(){
 			$newPass = !empty($_POST['newPass'])?$_POST['newPass']:null;
-			//var_dump($newPass);
+            if($newPass!=null){
+                echo "修改密码成功！";
+            }
 			//$this->render('pwdsave');
 			//$data = admin_user->model()->fun();
 			//$res = Yii::app()->db->createCommand("select * from qi_cell order by id desc limit 1")->queryRow();  

@@ -12,7 +12,7 @@
   <tbody><tr>
     <td valign="top" width="182">
     <div id="container">
-          <h1 class="type"><a href="javascript:void(0)">用户图片列表</a></h1>
+      <!--<h1 class="type"><a href="javascript:void(0)">用户图片列表</a></h1>
       <div style="visibility: visible; opacity: 0.9999; overflow: hidden; height: 1%;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
@@ -21,11 +21,11 @@
         </tbody></table>
         <ul class="MM">
                   <!-- <li><a href="__ROOT__/Userpicture/index" target="main">上传图片</a></li> -->
-                  <li><a href="__ROOT__/Userpicture/show_img" target="main">浏览图片</a></li>
+                  <!--<li><a href="__ROOT__/Userpicture/show_img" target="main">浏览图片</a></li>
                 </ul>
-      </div>
+      </div>-->
 	  <!-----------------------功能段---------------------------->
-            <h1 class="type"><a href="javascript:void(0)">用户注册信息</a></h1>
+            <h1 class="type"><a href="javascript:void(0)">用户信息</a></h1>
       <div style="visibility: hidden; opacity: 0; overflow: hidden; height: 0px;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
@@ -34,12 +34,12 @@
         </tbody></table>
         <ul class="MM">
                   <li><a href="/Choiceness/getlistchoiceness" target="main">用户信息</a></li>
-                  <li><a href="/UserReview/index" target="main">浏览评论</a></li>
+                  <li><a href="/UserReview/index" target="main">新增用户</a></li>
                 </ul>
       </div>
 	   <!-----------------------功能段---------------------------->
       <!-----------------------功能段---------------------------->
-            <h1 class="type"><a href="javascript:void(0)">总数统计信息</a></h1>
+            <h1 class="type"><a href="javascript:void(0)">文章管理</a></h1>
       <div style="visibility: hidden; opacity: 0; overflow: hidden; height: 0px;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
@@ -47,13 +47,14 @@
           </tr>
         </tbody></table>
         <ul class="MM">
-                  <li><a href="/Countinfo/index" target="main">图片上传总数</a></li>
-				  <li><a href="/CountUserinfo/index" target="main">用户注册总数</a></li>
+                  <li><a href="/Countinfo/index" target="main">发布文章</a></li>
+				  <li><a href="/CountUserinfo/index" target="main">查看文章</a></li>
+                  <li><a href="/CountUserinfo/index" target="main">查看评论</a></li>
                 </ul>
       </div>
 	   <!-----------------------功能段---------------------------->
 	    <!-----------------------功能段---------------------------->
-            <h1 class="type"><a href="javascript:void(0)">导出注册用户</a></h1>
+            <h1 class="type"><a href="javascript:void(0)">在线统计</a></h1>
       <div style="visibility: hidden; opacity: 0; overflow: hidden; height: 0px;" class="content">
         <table border="0" cellpadding="0" cellspacing="0" width="100%">
           <tbody><tr>
@@ -61,7 +62,7 @@
           </tr>
         </tbody></table>
         <ul class="MM">
-                  <li><a href="/UserDao/index" target="main">查询并导出用户</a></li>
+                  <li><a href="/UserDao/index" target="main">访问统计</a></li>
                 </ul>
       </div>
 	   <!-----------------------功能段---------------------------->
