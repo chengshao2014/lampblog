@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>- ¹ÜÀíÒ³Ãæ</title>
+<title>- ç®¡ç†é¡µé¢</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="utf-8">
 <meta http-equiv="refresh" content="60">
 <script language="JavaScript">
 function logout(){
-if (confirm("ÄúÈ·¶¨ÒªÍË³ö¹ÜÀíºóÌ¨Âğ£¿"))
+if (confirm("æ‚¨ç¡®å®šè¦é€€å‡ºç®¡ç†åå°å—ï¼Ÿ"))
 top.location = "/blogadmin/";
 return false;
 }
@@ -37,9 +37,9 @@ eval("submenu" + sid + ".style.display=\"none\";");
 <td height="64" width="61%"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/logo2.png" height="64" width="262"></td>
 <td valign="top" width="39%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td class="admin_txt" height="38" width="74%">³¬¼¶ÓÃ»§£º<b>admin</b> ÄúºÃ,¸ĞĞ»µÇÂ½Ê¹ÓÃ£¡Ä¿Ç°Ê±¼ä£º
+<td class="admin_txt" height="38" width="74%">è¶…çº§ç”¨æˆ·ï¼š<b>admin</b> æ‚¨å¥½,æ„Ÿè°¢ç™»é™†ä½¿ç”¨ï¼ç›®å‰æ—¶é—´ï¼š
 <span id="showtime"/></span></td>
-<td width="22%"><a href="#" target="_self" onclick="logout();"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/out.gif" alt="°²È«ÍË³ö" border="0" height="20" width="46"></a></td>
+<td width="22%"><a href="#" target="_self" onclick="logout();"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/images/admin_m/out.gif" alt="å®‰å…¨é€€å‡º" border="0" height="20" width="46"></a></td>
 <td width="4%">&nbsp;</td>
 </tr>
 <tr>
