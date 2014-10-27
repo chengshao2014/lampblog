@@ -74,8 +74,8 @@
           </tr>
         </tbody></table>
         <ul class="MM">
-                  <li><a href="<?php $this->createUrl('systeminfo/info');?>" target="main">系统设置</a></li>
-                  <li><a href="<?php $this->createUrl('login/repasswd');?>" target="main">修改密码</a></li>
+                  <li><a href="<?php echo $this->createUrl('systeminfo/info');?>" target="main">系统设置</a></li>
+                  <li><a href="<?php echo $this->createUrl('login/repasswd');?>" target="main">修改密码</a></li>
                   <li><a href="/" target="parent">回到首页</a></li>
 
                 </ul>
