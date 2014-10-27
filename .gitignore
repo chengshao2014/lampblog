@@ -1,3 +1,4 @@
 /blog/protected/models/*.bak
 /blog/404.html
 /blog/protected/config/
+/nbproject/private/
