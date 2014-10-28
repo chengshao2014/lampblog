@@ -7272,3 +7272,21 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/index.php?r=blogadmin/login/top
 ---
+2014/10/27 23:35:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=login
+HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/top
+---
+2014/10/27 23:35:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\Design of programming\phpStudy\www\blog\framework\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 G:\Design of programming\phpStudy\www\blog\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 G:\Design of programming\phpStudy\www\blog\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=login
+HTTP_REFERER=http://localhost/index.php?r=blogadmin/login/top
+---

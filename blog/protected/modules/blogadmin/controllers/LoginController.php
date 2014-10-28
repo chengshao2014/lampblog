@@ -94,4 +94,9 @@
 			//$data = admin_user->model()->fun();
 			//$res = Yii::app()->db->createCommand("select * from qi_cell order by id desc limit 1")->queryRow();  
 		}
+
+		public function actionLogout(){
+			Yii::app()->user->logout();
+			$this->redirect('blogadmin');
+		}
 	}
