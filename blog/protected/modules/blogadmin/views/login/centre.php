@@ -204,7 +204,13 @@ var reportPicOptions = {
         <tr><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">我的个人信息</td></tr>
         <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>你好：<span style="color:red"><?php echo Yii::app()->session['m_user'];?></span></td></tr>
         <tr><td>所属角色：<span style="color:red">超级管理员</span></td><br/></tr>
-        <tr><td style="border-top:1px dotted #ccc;line-height:28px">上次登录IP：<?php echo $_SERVER['REMOTE_ADDR'];?>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr><tr><td style="line-height:28px">当前登录时间：<?php echo date('Y-m-d H:i:s',Yii::app()->session['m_logintime']);?></td></tr>
+        <tr><td style="border-top:1px dotted #ccc;line-height:28px">上次登录IP：
+        <?php $ip = $_SERVER['REMOTE_ADDR'];echo $ip;$url="http://ip.taobao.com/service/getIpInfo.php?ip=123.57.17.8 ";
+        $content=file_get_contents($url);
+        $cons=json_decode($content,true);
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        echo $cons['data']['country'].'&nbsp;&nbsp;'.$cons['data']['region'].'&nbsp;&nbsp;'.$cons['data']['city'];?>
+        </td></tr><tr><td style="line-height:28px">当前登录时间：<?php echo date('Y-m-d H:i:s',Yii::app()->session['m_logintime']);?></td></tr>
     </table><br/>
     <table width="100%" height="10%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
         <tr height=10%><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">LamnpBlog系统开发团队</td></tr>
