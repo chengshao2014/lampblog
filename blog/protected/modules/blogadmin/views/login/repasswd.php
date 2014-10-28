@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css" media="all">
 <!--<link rel="stylesheet" href="<?php #echo Yii::app()->request->baseUrl; ?>/assets/admin/css/jquery.css">-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery-1.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_002.js"></script>
@@ -14,13 +13,13 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_006.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_007.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_010.js"></script>
-<!--<script src="<?php //echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.htm"></script>-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_005.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/formvalidator.js"></script>
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery/flot/excanvas.min.js"></script><![endif]-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_013.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_003.js"></script>
+<!--<script src="<?php //echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery.htm"></script>-->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery/flot/excanvas.min.js"></script><![endif]-->
 <style>
 select{height:20px; width:100px}
 input.text {height:20px;width:100px }

@@ -3,8 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/common.css"/>
-
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/common.css" media="all"/>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/jQuery-v1.7.2.js"/>
 </script>
 <title>LamnpBlog后台登录</title>

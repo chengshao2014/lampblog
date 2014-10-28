@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <title>管理中心</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/common.css" media="all"/>
 </head>
 <frameset rows="64,*,20" frameborder="0" border="0" framespacing="0">
   <frame src="<?php echo $this->createUrl('login/top');?>" noresize="noresize" frameborder="0" name="topFrame" marginwidth="0" marginheight="0" target="main" scrolling="no">
