@@ -202,9 +202,9 @@ var reportPicOptions = {
     
     <table width="100%" height="18%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
         <tr><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">我的个人信息</td></tr>
-        <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>你好：admin</td></tr>
-        <tr><td>所属角色：超级管理员</td><br/></tr>
-        <tr><td style="border-top:1px dotted #ccc;line-height:28px">上次登录IP：<?php echo $_SERVER['REMOTE_ADDR'];?></td></tr>
+        <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>你好：<span style="color:red"><?php echo Yii::app()->session['m_user'];?></span></td></tr>
+        <tr><td>所属角色：<span style="color:red">超级管理员</span></td><br/></tr>
+        <tr><td style="border-top:1px dotted #ccc;line-height:28px">上次登录IP：<?php echo $_SERVER['REMOTE_ADDR'];?>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr><tr><td style="line-height:28px">当前登录时间：<?php echo date('Y-m-d H:i:s',Yii::app()->session['m_logintime']);?></td></tr>
     </table><br/>
     <table width="100%" height="10%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
         <tr height=10%><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">LamnpBlog系统开发团队</td></tr>
@@ -217,12 +217,12 @@ var reportPicOptions = {
     <table width="100%" height="10%" style="border:1px solid #c7d8ea;margin-left:10px;line-height:28px">
         <tr height=10%><td style="background:url(/assets/admin/images/admin_m/x_bg.png) repeat-x scroll left -42px rgba(0, 0, 0, 0);border-bottom:1px solid #c7d8ea;color:#3a6ea5;line-height: 28px;font-weight:bold;">系统信息</td></tr>
         <tr style="border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px dotted #ccc;margin-left:10px;padding-top:10px"><td>服务器操作系统：<?php echo php_uname();?></td></tr>
-        <tr><td>服务器解译引擎：<?php echo check3("SERVER_SOFTWARE");?></td></tr>
+        <tr><td>服务器解译引擎：<?php echo $_SERVER['SERVER_SOFTWARE'];?></td></tr>
         <tr><td>服务器空余空间：<?php echo intval(diskfreespace(".") / (1024 * 1024)).'Mb';?></td></tr>
         
         <tr><td>服务器PHP版本：<?php echo PHP_VERSION;?></td></tr>
-        <tr><td>Web服务端口：<?php echo check3("SERVER_PORT");?></td></tr>
-        
+        <tr><td>数据库信息：<?php echo mysql_get_client_info();?></td></tr>
+        <tr><td>服务器IP：<?php echo $_SERVER['SERVER_ADDR']?></td></tr>
     </table>
 </table>
 </body></html>
