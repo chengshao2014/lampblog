@@ -94,7 +94,7 @@ function check4($funcname,$func="getenv")
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/skin.css" rel="stylesheet" type="text/css" media="all">
 <!--<link rel="stylesheet" href="<?php //echo Yii::app()->request->baseUrl; ?>/assets/admin/css/jquery.css">-->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery-1.js"></script>
 <!--<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/admin_m/jquery_002.js"></script>
@@ -171,9 +171,6 @@ var reportPicOptions = {
 	 return format;  
     }  
 </script></head>
-
-
-
 <body>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tbody><tr>

@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>管理页面</title>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/main.css" media="all"/>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/prototype.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/moo.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/moo_002.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/main.css"/>
 </head>
 <body>
 <table bgcolor="#EEF2FB" border="0" cellpadding="0" cellspacing="0" height="280" width="100%">
