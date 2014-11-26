@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/common.css" media="all"/>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/jQuery-v1.7.2.js"/>
 </script>
-<title>LamnpBlog后台登录</title>
+<title>Welcome LampRookie Blog管理后台登录</title>
 </head>
 <body>
 	<div class="content">

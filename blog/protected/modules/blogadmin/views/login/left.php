@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>管理页面</title>
+<title>Welcome you come to LampRookie Blog管理页面</title>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/css/main.css" media="all"/>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/prototype.js" type="text/javascript">
 </script>
@@ -35,8 +35,8 @@
           </tr>
         </tbody></table>
         <ul class="MM">
-                  <li><a href="/Choiceness/getlistchoiceness" target="main">用户信息</a></li>
-                  <li><a href="/UserReview/index" target="main">新增用户</a></li>
+                  <li><a href="/index.php?r=blogadmin/userinfo/show/" target="main">用户信息</a></li>
+                  <li><a href="/index.php?r=blogadmin/userinfo/userAdd/" target="main">新增用户</a></li>
                 </ul>
       </div>
 	   <!-----------------------功能段---------------------------->
@@ -49,9 +49,9 @@
           </tr>
         </tbody></table>
         <ul class="MM">
-                  <li><a href="/Countinfo/index" target="main">发布文章</a></li>
-				  <li><a href="/CountUserinfo/index" target="main">查看文章</a></li>
-                  <li><a href="/CountUserinfo/index" target="main">查看评论</a></li>
+                  <li><a href="/index.php?r=blogadmin/article/ArtAdd/" target="main">发布文章</a></li>
+				  <li><a href="/index.php?r=blogadmin/article/show/" target="main">查看文章</a></li>
+                  <li><a href="/index.php?r=blogadmin/article/reply/" target="main">查看评论</a></li>
                 </ul>
       </div>
 	   <!-----------------------功能段---------------------------->
