@@ -5,6 +5,9 @@
 	 */
 	class LoginController extends Controller{
 		public function actionIndex(){
+			if(!isset(Yii::app()->session['m_user'])){
+				$this->redirect("/blogadmin");
+			}
 			$this->render('index');
 		}
 		/**
@@ -18,23 +21,23 @@
 			$captcha = !empty($_POST['captcha'])?strtolower($_POST['captcha']):null;
 			//获取Yii验证码
 			$cap = $this->createAction('captcha')->getVerifyCode();
-			if($username==null){
+			if($username == null){
 				echo " 用户名不允许为空 ";
 			}elseif($username!="cheng"){
 				echo " 用户名不正确 " ;
 			}
-			if($password==null){
+			if($password == null){
 				echo " 密码不能为空";
-			}elseif($password!=123){
+			}elseif($password != 123){
 				echo " 密码不正确 ";
 			}
-			if($captcha==null){
+			if($captcha == null){
 				echo " 验证码不允许为空 ";
-			}elseif($captcha!=$cap){
+			}elseif($captcha != $cap){
 				echo " 验证码不正确，请重新输入 ";
 			}
-			Yii::app()->session['m_user']=$username;
-			Yii::app()->session['m_logintime']=time();
+			Yii::app()->session['m_user'] = $username;
+			Yii::app()->session['m_logintime'] = time();
 		}
 		/**
 		 * 调用验证码类
