@@ -7,6 +7,7 @@
  */
     class ArticleController extends CController{
         public function actionShow(){
+            echo $this->ubb();
             $this->renderPartial("show");
         }
         
@@ -17,5 +18,12 @@
         public function actionReply(){
             $this->renderPartial("artReply");
         }
+
+
+/**
+ * UBB 解析
+ * @return string
+ */
+        
     }
 

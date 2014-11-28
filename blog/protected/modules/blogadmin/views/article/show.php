@@ -6,5 +6,5 @@
  * and open the template in the editor.
  */
     
-    echo "这是浏览文章页面";
+    //echo "这是浏览文章页面";
 
