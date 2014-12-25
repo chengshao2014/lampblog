@@ -7,7 +7,17 @@
  */
     class ArticleController extends CController{
         public function actionShow(){
-            echo $this->ubb();
+        $htmlData = '';
+		if (! empty ( $_POST ['content'] )) 
+		{
+			if (get_magic_quotes_gpc ()) {
+				$htmlData = stripslashes ( $_POST ['content'] );
+				
+			} else {
+				$htmlData = $_POST ['content'];
+			}
+		}
+			echo $htmlData;
             $this->renderPartial("show");
         }
         
