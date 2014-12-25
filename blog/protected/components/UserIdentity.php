@@ -40,6 +40,6 @@ class UserIdentity extends CUserIdentity
 		{
 			$this->errorCode = self::ERROR_NONE;
 		}
-		return!this->errorCode;
+		return!this -> errorCode;
 	}
 }
