@@ -9,18 +9,32 @@
 <script charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/lang/zh_CN.js"></script>
 <script charset="utf-8" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/admin/js/plugins/code/prettify.js"></script>
 <style type="text/css">
-	body{margin:0px; padding:0px}
+	body{margin:0px; padding:0px;font-size:12px}
 	#mainbody{width:900px; height:680px; border:1px solid #ccc;}
-	#basic{width:94%;height:94%;border:1px solid #ccc;margin:0 auto;margin:18px}
-	textarea{resize:none}
+	#basic{width:95%;height:94%;margin:0 auto;margin:19px;clear:both}
+	textarea{resize:none;outline:none;width: 99%; height: 400px; visibility: hidden;
+			overflow:hidden;clear:both}
+	ul li{list-style:none;float:left;font-size:14px}
+	.con_nav{height:5px;width:100%;clear:both}
+	#con_title{width:500px};
 </style>
 </head>
 <body>
+	<form name="example" method="post" action="/index.php?r=blogadmin/article/show">
 	<div id="mainbody">
+		<div class="标题">
+			<ul>
+				<li>标题：&nbsp;&nbsp;</li>
+				<li><input type="text" name="con_title" value="" id="con_title"</li>
+			</ul>
+			<ul>
+				<li>文章分类：</li>
+				<li><input type="text" name="con_type" value="" id="con_type"</li>
+			</ul>
+		</div>
+		<div class="con_nav"></div>
 		<div id="basic">
-		<form name="example" method="post" action="/index.php?r=blogadmin/article/show">
-			<textarea style="width: 100%; height: 500px; visibility: hidden;
-			overflow-x:visible;overflow-y:visible;resize:none" name="content">
+			<textarea name="content">
 			</textarea>
 			<br /> <input type="submit" name="button" value="提交内容" /> (提交快捷键: Ctrl + Enter)
 		</form>
@@ -33,6 +47,9 @@
 				//cssPath : '../plugins/code/prettify.css',
 				//uploadJson : '../php/upload_json.php',
 				//fileManagerJson : '../php/file_manager_json.php',
+				resizeType: 1,
+				wyswygMode: true,
+				useContextmenu: true,
 				allowFileManager : true,
 				afterCreate : function() {
 					var self = this;
