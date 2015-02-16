@@ -5,6 +5,9 @@
 	 */
 	class LoginController extends Controller{
 		public function actionIndex(){
+			$sql = "select * from {{admin_user}}";
+			$data = Yii::app()->db->createCommand($sql)->queryAll();
+			print_r($data);die;
 			if(!isset(Yii::app()->session['m_user'])){
 				$this->redirect("/blogadmin");
 			}
