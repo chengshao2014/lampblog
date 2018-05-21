@@ -116,16 +116,6 @@ body,td,th {
 <body><br>
         <table width="760" border="0" align="center" cellpadding="4" cellspacing="1">
           <tr>
-            <td width="20%" bgcolor="#dee3e7" align="center"><a href="http://www.ccvita.com" target="_blank">CcVita HmoePage</a></td>
-            <td width="20%" bgcolor="#dee3e7" align="center"><a href="http://www.ccvita.com" target="_blank">About CcVta</a></td>
-            <td width="20%" bgcolor="#dee3e7" align="center"><a href="http://www.ccvita.com" target="_blank">About This</a></td>
-            <td width="20%" bgcolor="#dee3e7" align="center"><a href="http://www.ccvita.com" target="_blank">About Me</a></td>
-            <td width="20%" bgcolor="#dee3e7" align="center"><a href="mailto:jianxieshui@qq.com" target="_blank">E-mail</a></td>
-          </tr>
-        </table>
-    <br>
-        <table width="760" border="0" align="center" cellpadding="4" cellspacing="1">
-          <tr>
             <td width="20%" bgcolor="#dee3e7" align="center"><a href="#server">服务器特性</a></td>
             <td width="20%" bgcolor="#dee3e7" align="center"><a href="#php">PHP基本特性</a></td>
             <td width="20%" bgcolor="#dee3e7" align="center"><a href="#basic">组件支持状况</a></td>
